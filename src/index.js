@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
 import { useState } from "react";
+import styled from "styled-components";
 
 import Usuario from "./componentes/Usuario.js";
 import FormularioInicioSesion from "./componentes/FormularioInicioSesion.js";
@@ -25,7 +26,7 @@ const App = () => {
             </div>
           ) : (
             <div>
-              <h1 className="text-center">No has iniciado sesión</h1>
+              <Titulo className="text-center">No has iniciado sesión</Titulo>
               {/*Desde aqui le pasaremos argumentos al formulario para acceder a la funcion de cambiar sesion desde alli*/}
               <FormularioInicioSesion cambiarSesion={cambiarSesion} />
             </div>
@@ -35,5 +36,9 @@ const App = () => {
     </div>
   );
 };
+
+const Titulo = styled.h1`
+  margin-bottom: 20px;
+`;
 
 ReactDOM.render(<App />, document.getElementById("root"));
