@@ -16,6 +16,7 @@ const FormularioInicioSesion = (props) => {
     }
   };
 
+  //Con esta funcion se comparan los datos al momento de hacer submit
   const onSubmit = (e) => {
     if (usuario === "victor" && password === "vic123") {
       props.cambiarSesion(true);
@@ -27,6 +28,7 @@ const FormularioInicioSesion = (props) => {
     e.preventDefault();
   };
 
+  //JSX que retorna la funcion y se muestra dentro del container principal
   return (
     <form className="form" action="" onSubmit={onSubmit}>
       <div>

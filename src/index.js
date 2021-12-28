@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="container">
       <div className="row justify-content-center mt-5">
-        <div className="col-8">
+        <div className="col-12 col-md-8 col-lg-4">
           {sesion === true ? (
             <div>
               <Usuario />
@@ -25,7 +25,7 @@ const App = () => {
             </div>
           ) : (
             <div>
-              <p className="text-center">No has iniciado sesión</p>
+              <h1 className="text-center">No has iniciado sesión</h1>
               {/*Desde aqui le pasaremos argumentos al formulario para acceder a la funcion de cambiar sesion desde alli*/}
               <FormularioInicioSesion cambiarSesion={cambiarSesion} />
             </div>
