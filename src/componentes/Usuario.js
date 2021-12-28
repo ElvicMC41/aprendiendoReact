@@ -1,10 +1,11 @@
 import React from "react";
+import Titulo from "../elementos/Titulo.js";
 
 const Usuario = () => {
   const nombre = "victor";
   return (
     <div className="text-center">
-      <h1>Hola {nombre}</h1>
+      <Titulo>Hola {nombre}</Titulo>
       <p>Iniciaste sesión</p>
     </div>
   );

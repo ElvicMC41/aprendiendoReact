@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import { useState } from "react";
-import styled from "styled-components";
+import Titulo from "./elementos/Titulo.js";
 
 import Usuario from "./componentes/Usuario.js";
 import FormularioInicioSesion from "./componentes/FormularioInicioSesion.js";
@@ -36,9 +36,5 @@ const App = () => {
     </div>
   );
 };
-
-const Titulo = styled.h1`
-  margin-bottom: 20px;
-`;
 
 ReactDOM.render(<App />, document.getElementById("root"));
